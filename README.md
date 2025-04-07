@@ -1,59 +1,62 @@
-# MoodBoard
+# 🌙 MoodBoard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+> A simple and interactive **Mood Board** web app built during the **Coding Hero** class to practice and learn Angular fundamentals.  
+> Features a sleek **dark mode theme** and clean layout.
 
-## Development server
+---
 
-To start a local development server, run:
+## 📦 Project Setup
 
-```bash
-ng serve
-```
+### 🛠 Commands Used
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. **Create Angular Project**
+   ```bash
+   ng new mood-board
+   ```
+   Initializes a new Angular project named `mood-board`.
 
-## Code scaffolding
+2. **Navigate to the Project Directory**
+   ```bash
+   cd mood-board
+   ```
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. **Generate Layout Components**
+   - **Header Component**
+     ```bash
+     ng generate component app/layout/header
+     ```
+   - **Footer Component**
+     ```bash
+     ng generate component app/layout/footer
+     ```
 
-```bash
-ng generate component component-name
-```
+4. **Run the Project**
+   ```bash
+   ng serve
+   ```
+   Starts the development server and serves the project locally.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 📁 Project Structure
 
-## Building
+| File / Folder                          | Purpose                                      |
+|---------------------------------------|----------------------------------------------|
+| `src/styles.css`                      | Global styles including dark mode variables  |
+| `src/app/layout/header/*.html`        | Header layout and navigation bar             |
+| `src/app/layout/footer/*.html`        | Footer layout and content                    |
+| `src/app/app.component.html`          | Main component integrating header & footer   |
+| `README.md`                           | Project documentation                        |
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 👩‍💻 Author
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+**Saloni Jain**
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🚀 Learn More & Build Projects
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Join the **Coding Hero** program to build more amazing frontend projects:  
+👉 [Coding Hero Course by ChaiCode](https://courses.chaicode.com/learn/batch/about?bundleId=226894)

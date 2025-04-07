@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    border-bottom: 1px solid var(--button-bg-color);
+}
+
+header .logo h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header .nav-bar {
+    display: flex;
+    gap: 1.5rem;
+}
+
+header .nav-bar a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .nav-bar a:hover {
+    color: var(--button-font-color);
+}

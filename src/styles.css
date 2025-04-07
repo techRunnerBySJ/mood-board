@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Define dark mode color variables */
+:root {
+    --background-color: #000;
+    --font-color: #fff;
+    --link-color: #1e90ff;
+    --button-bg-color: #333;
+    --button-font-color: #fff;
+}
+
+html, body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
