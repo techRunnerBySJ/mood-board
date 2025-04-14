@@ -1,0 +1,10 @@
+.happy-mood-color{
+    color: green;
+}
+.sad-mood-color{
+    color: blue;
+}
+
+.mood-color{
+    font-weight: bold;
+}
