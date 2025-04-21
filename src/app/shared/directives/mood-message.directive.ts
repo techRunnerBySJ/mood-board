@@ -11,7 +11,7 @@ export class MoodMessageDirective {
     'sad':'no, worries this will pass also.',
     'angry':'Anger is valid, but don’t let it control you.',
     'calm':'you are like a dhoni.',
-    'exicted':'keep your excitement high till the work done.'
+    'excited':'keep your excitement high till the work done.'
 }
 
   constructor() { }

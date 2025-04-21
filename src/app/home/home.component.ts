@@ -2,16 +2,18 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from '../layout/header/header.component';
 import { CommonModule } from '@angular/common';
 import { MoodMessageDirective } from '../shared/directives/mood-message.directive';
+import { MoodEmojiPipe } from '../shared/pipes/mood-emoji.pipe';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  imports: [CommonModule]
+  imports: [CommonModule, MoodEmojiPipe, FormsModule]
 })
 export class HomeComponent {
 
-  moods = ['happy', 'sad', 'angry', 'calm', 'exicted'];
+  moods = ['happy', 'sad', 'angry', 'calm', 'excited'];
   selectedMood: string = '';
   userName: string = 'Coding Hero';
   showSelectedMood: boolean = false;
@@ -37,4 +39,7 @@ export class HomeComponent {
     console.log(this.selectedMood);
   }
 
+  submit(){
+
+  }
 }

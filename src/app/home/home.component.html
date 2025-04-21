@@ -1,10 +1,13 @@
-<h3>Hi {{userName}} !!!</h3>
-
+<form>
+    <input type="text" [(ngModel)]="userName">
+    <button (submit)="submit()">Submit</button>
+</form>
+<h3>Hi {{userName | uppercase}} !!!</h3>
 <div>
     <button (click)="selectMood(mood)" *ngFor="let mood of moods">{{mood}}</button>
 
     <h3 *ngIf="showSelectedMood" class="mood-color" [ngClass]="{
         'happy-mood-color': selectedMood === 'happy',
-        'sad-mood-color': selectedMood === 'sad'}">Selected Mood: {{selectedMood}}</h3>
+        'sad-mood-color': selectedMood === 'sad'}">Selected Mood: {{selectedMood | moodEmoji}}</h3>
     <h1 *ngIf="isMoodMessage">Message from {{userName}}: {{moodMessage}}</h1>
 </div>
