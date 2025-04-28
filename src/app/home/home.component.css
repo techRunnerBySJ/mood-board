@@ -5,6 +5,338 @@
     color: blue;
 }
 
+.angry-mood-color{
+    color: red;
+}
+
+.calm-mood-color{
+    color: rgb(68, 68, 1);
+}
+
+.excited-mood-color{
+    color: rgb(255, 0, 0);
+}
 .mood-color{
     font-weight: bold;
+}
+
+.mood-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mood-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mood-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    color: white;
+}
+
+.mood-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood-button[data-mood="happy"] {
+    background-color: #4CAF50;
+}
+
+.mood-button[data-mood="sad"] {
+    background-color: #2196F3;
+}
+
+.mood-button[data-mood="angry"] {
+    background-color: #F44336;
+}
+
+.mood-button[data-mood="calm"] {
+    background-color: #9C27B0;
+}
+
+.mood-button[data-mood="exicted"] {
+    background-color: #FF9800;
+}
+
+.mood-message-container {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mood-color {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-message {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+    color: var(--font-color);
+    margin-bottom: 1rem;
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.welcome-section {
+    margin-bottom: 3rem;
+}
+
+.mood-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.mood-button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    color: white;
+}
+
+.mood-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mood-button[data-mood="happy"] {
+    background-color: #4CAF50;
+}
+
+.mood-button[data-mood="sad"] {
+    background-color: #2196F3;
+}
+
+.mood-button[data-mood="angry"] {
+    background-color: #F44336;
+}
+
+.mood-button[data-mood="calm"] {
+    background-color: #9C27B0;
+}
+
+.mood-button[data-mood="excited"] {
+    background-color: #FF9800;
+}
+
+.mood-message-container {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mood-color {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-message {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mood-tracker-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mood-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: 600;
+    color: #555;
+}
+
+.form-control {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.chart-container {
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#moodChart {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 300px;
+}
+
+/* Error messages */
+.error-message {
+    color: #f44336;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Mood colors */
+.happy-mood-color {
+    color: #4CAF50;
+}
+
+.sad-mood-color {
+    color: #2196F3;
+}
+
+.angry-mood-color {
+    color: #F44336;
+}
+
+.calm-mood-color {
+    color: #9C27B0;
+}
+
+.excited-mood-color {
+    color: #FF9800;
+}
+
+.mood-entries-table {
+    margin: 2rem 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.mood-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+canvas{
+    width: 100%;
+    height: 100%;
 }
